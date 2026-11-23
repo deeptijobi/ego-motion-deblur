@@ -1,0 +1,106 @@
+PS F:\ImageProcessingCourse\GroupProj\deblur> & 'C:\Program Files\Python312\python.exe' 'f:/ImageProcessingCourse/GroupProj/deblur/check_data.py'
+abandonedfactory\Hard\P000          poses  1197  img  1197  depth  1197
+abandonedfactory\Hard\P001          poses   559  img   559  depth   559
+abandonedfactory\Hard\P002          poses   399  img   399  depth   399
+abandonedfactory\Hard\P003          poses   769  img   769  depth   769
+abandonedfactory\Hard\P004          poses   890  img   890  depth   890
+abandonedfactory\Hard\P005          poses  1007  img  1007  depth  1007
+abandonedfactory\Hard\P006          poses   343  img   343  depth   343
+abandonedfactory\Hard\P007          poses   995  img   995  depth   995
+abandonedfactory\Hard\P008          poses   920  img   920  depth   920
+abandonedfactory\Hard\P009          poses  2040  img  2040  depth  2040
+abandonedfactory\Hard\P010          poses  1107  img  1107  depth  1107
+abandonedfactory\Hard\P011          poses   634  img   634  depth   634
+carwelding\Hard\P000                poses   452  img   452  depth   452
+carwelding\Hard\P001                poses   832  img   832  depth   832
+carwelding\Hard\P002                poses   507  img   507  depth   507
+carwelding\Hard\P003                poses   352  img   352  depth   352
+hospital\Hard\P037                  poses   403  img   403  depth   403
+hospital\Hard\P038                  poses   308  img   308  depth   308
+hospital\Hard\P039                  poses   439  img   439  depth   439
+hospital\Hard\P040                  poses   437  img   437  depth   437
+hospital\Hard\P041                  poses   589  img   589  depth   589
+hospital\Hard\P042                  poses   551  img   551  depth   551
+hospital\Hard\P043                  poses  1112  img  1112  depth  1112
+hospital\Hard\P044                  poses   577  img   577  depth   577
+hospital\Hard\P045                  poses   342  img   342  depth   342
+hospital\Hard\P046                  poses   473  img   473  depth   473
+hospital\Hard\P047                  poses   533  img   533  depth   533
+hospital\Hard\P048                  poses   493  img   493  depth   493
+hospital\Hard\P049                  poses   311  img   311  depth   311
+japanesealley\Hard\P000             poses   397  img   397  depth   397
+japanesealley\Hard\P001             poses   653  img   653  depth   653
+japanesealley\Hard\P002             poses   391  img   391  depth   391
+japanesealley\Hard\P003             poses   309  img   309  depth   309
+japanesealley\Hard\P004             poses   362  img   362  depth   362
+japanesealley\Hard\P005             poses   593  img   593  depth   593
+office\Hard\P000                    poses   767  img   767  depth   767
+office\Hard\P001                    poses   652  img   652  depth   652
+office\Hard\P002                    poses   993  img   993  depth   993
+office\Hard\P003                    poses   300  img   300  depth   300
+office\Hard\P004                    poses   682  img   682  depth   682
+office\Hard\P005                    poses   896  img   896  depth   896
+office\Hard\P006                    poses   496  img   496  depth   496
+office\Hard\P007                    poses   884  img   884  depth   884
+PS F:\ImageProcessingCourse\GroupProj\deblur> & 'C:\Program Files\Python312\python.exe' 'f:/ImageProcessingCourse/GroupProj/deblur/synthesize.py'
+device: cuda
+train: ['office/Hard/P000', 'office/Hard/P001', 'office/Hard/P002', 'office/Hard/P003', 'office/Hard/P004', 'hospital/Hard/P037', 'hospital/Hard/P038', 'hospital/Hard/P039', 'hospital/Hard/P040', 'hospital/Hard/P041', 'carwelding/Hard/P000', 'carwelding/Hard/P001', 'carwelding/Hard/P002', 'abandonedfactory/Hard/P000', 'abandonedfactory/Hard/P001', 'abandonedfactory/Hard/P002', 'abandonedfactory/Hard/P003', 'abandonedfactory/Hard/P004']
+val: ['office/Hard/P007', 'hospital/Hard/P049', 'carwelding/Hard/P003', 'abandonedfactory/Hard/P011']
+test: ['japanesealley/Hard/P000', 'japanesealley/Hard/P001', 'japanesealley/Hard/P002', 'japanesealley/Hard/P003', 'japanesealley/Hard/P004', 'japanesealley/Hard/P005']
+[train] office/Hard/P000: 96 frames x 1
+    96 new samples, 2.52 s/sample
+[train] office/Hard/P001: 82 frames x 1
+    82 new samples, 2.47 s/sample
+[train] office/Hard/P002: 124 frames x 1
+    124 new samples, 2.51 s/sample
+[train] office/Hard/P003: 38 frames x 1
+    38 new samples, 2.50 s/sample
+[train] office/Hard/P004: 85 frames x 1
+    85 new samples, 2.46 s/sample
+[train] hospital/Hard/P037: 51 frames x 1
+    51 new samples, 2.52 s/sample
+[train] hospital/Hard/P038: 39 frames x 1
+    39 new samples, 2.51 s/sample
+[train] hospital/Hard/P039: 55 frames x 1
+    55 new samples, 2.48 s/sample
+[train] hospital/Hard/P040: 55 frames x 1
+    55 new samples, 2.46 s/sample
+[train] hospital/Hard/P041: 74 frames x 1
+    74 new samples, 2.47 s/sample
+[train] carwelding/Hard/P000: 57 frames x 1
+    57 new samples, 2.48 s/sample
+[train] carwelding/Hard/P001: 104 frames x 1
+    104 new samples, 2.48 s/sample
+[train] carwelding/Hard/P002: 64 frames x 1
+    64 new samples, 2.54 s/sample
+[train] abandonedfactory/Hard/P000: 150 frames x 1
+    150 new samples, 2.43 s/sample
+[train] abandonedfactory/Hard/P001: 70 frames x 1
+    70 new samples, 2.42 s/sample
+[train] abandonedfactory/Hard/P002: 50 frames x 1
+    50 new samples, 2.42 s/sample
+[train] abandonedfactory/Hard/P003: 96 frames x 1
+    96 new samples, 2.40 s/sample
+[train] abandonedfactory/Hard/P004: 111 frames x 1
+    111 new samples, 2.41 s/sample
+[val] office/Hard/P007: 111 frames x 1
+    111 new samples, 2.41 s/sample
+[val] hospital/Hard/P049: 39 frames x 1
+    39 new samples, 2.41 s/sample
+[val] carwelding/Hard/P003: 44 frames x 1
+    44 new samples, 2.46 s/sample
+[val] abandonedfactory/Hard/P011: 79 frames x 1
+    79 new samples, 2.43 s/sample
+[test] japanesealley/Hard/P000: 50 frames x 3
+    150 new samples, 2.34 s/sample
+[test] japanesealley/Hard/P001: 82 frames x 3
+    246 new samples, 2.34 s/sample
+[test] japanesealley/Hard/P002: 49 frames x 3
+    147 new samples, 2.34 s/sample
+[test] japanesealley/Hard/P003: 39 frames x 3
+    117 new samples, 2.34 s/sample
+[test] japanesealley/Hard/P004: 45 frames x 3
+    135 new samples, 2.35 s/sample
+[test] japanesealley/Hard/P005: 74 frames x 3
+    222 new samples, 2.34 s/sample
+done

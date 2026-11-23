@@ -1,0 +1,660 @@
+model ours: 1.992M params, device cuda, amp True
+train 1401 samples, val 273 samples
+it    100  loss 0.0335  lr 1.00e-03  0.840 s/it  mem 1.19 GB  alphas 0.960 1.012 1.047 1.054 1.050
+it    200  loss 0.0215  lr 1.00e-03  0.805 s/it  mem 1.19 GB  alphas 0.968 1.029 1.082 1.069 1.105
+it    300  loss 0.0209  lr 1.00e-03  0.826 s/it  mem 1.19 GB  alphas 1.006 1.068 1.127 1.056 1.164
+it    400  loss 0.0206  lr 1.00e-03  0.841 s/it  mem 1.19 GB  alphas 1.047 1.108 1.169 1.014 1.220
+it    500  loss 0.0188  lr 9.99e-04  0.849 s/it  mem 1.19 GB  alphas 1.091 1.150 1.209 0.981 1.276
+it    600  loss 0.0200  lr 9.99e-04  0.859 s/it  mem 1.19 GB  alphas 1.132 1.190 1.244 0.954 1.332
+it    700  loss 0.0177  lr 9.99e-04  0.863 s/it  mem 1.19 GB  alphas 1.182 1.240 1.285 0.927 1.392
+it    800  loss 0.0185  lr 9.98e-04  0.870 s/it  mem 1.19 GB  alphas 1.236 1.294 1.326 0.896 1.452
+it    900  loss 0.0184  lr 9.98e-04  0.867 s/it  mem 1.19 GB  alphas 1.294 1.355 1.375 0.878 1.503
+it   1000  loss 0.0183  lr 9.97e-04  0.869 s/it  mem 1.19 GB  alphas 1.350 1.414 1.405 0.853 1.555
+it   1100  loss 0.0180  lr 9.97e-04  0.873 s/it  mem 1.19 GB  alphas 1.408 1.475 1.444 0.831 1.607
+it   1200  loss 0.0179  lr 9.96e-04  0.874 s/it  mem 1.19 GB  alphas 1.468 1.539 1.490 0.815 1.659
+it   1300  loss 0.0184  lr 9.95e-04  0.877 s/it  mem 1.19 GB  alphas 1.527 1.599 1.529 0.796 1.709
+it   1400  loss 0.0174  lr 9.95e-04  0.873 s/it  mem 1.19 GB  alphas 1.589 1.659 1.574 0.789 1.743
+it   1500  loss 0.0168  lr 9.94e-04  0.875 s/it  mem 1.19 GB  alphas 1.652 1.715 1.624 0.783 1.777
+it   1600  loss 0.0171  lr 9.93e-04  0.880 s/it  mem 1.19 GB  alphas 1.713 1.773 1.674 0.775 1.816
+it   1700  loss 0.0173  lr 9.92e-04  0.884 s/it  mem 1.19 GB  alphas 1.778 1.827 1.727 0.766 1.853
+it   1800  loss 0.0169  lr 9.91e-04  0.882 s/it  mem 1.19 GB  alphas 1.845 1.868 1.785 0.773 1.869
+it   1900  loss 0.0159  lr 9.90e-04  0.873 s/it  mem 1.19 GB  alphas 1.906 1.898 1.844 0.777 1.880
+it   2000  loss 0.0179  lr 9.89e-04  0.882 s/it  mem 1.19 GB  alphas 1.971 1.926 1.909 0.786 1.886
+  val PSNR 32.08 dB  (blurry input 29.83 dB)  * best
+it   2100  loss 0.0178  lr 9.88e-04  1.620 s/it  mem 1.19 GB  alphas 2.033 1.953 1.973 0.794 1.893
+it   2200  loss 0.0165  lr 9.87e-04  0.886 s/it  mem 1.19 GB  alphas 2.096 1.973 2.038 0.802 1.894
+it   2300  loss 0.0163  lr 9.86e-04  0.881 s/it  mem 1.19 GB  alphas 2.159 1.992 2.098 0.811 1.900
+it   2400  loss 0.0164  lr 9.84e-04  0.883 s/it  mem 1.19 GB  alphas 2.225 2.010 2.163 0.819 1.904
+it   2500  loss 0.0166  lr 9.83e-04  0.880 s/it  mem 1.19 GB  alphas 2.283 2.025 2.220 0.826 1.909
+it   2600  loss 0.0177  lr 9.82e-04  0.894 s/it  mem 1.19 GB  alphas 2.348 2.047 2.286 0.834 1.918
+it   2700  loss 0.0158  lr 9.80e-04  0.892 s/it  mem 1.19 GB  alphas 2.409 2.059 2.350 0.843 1.920
+it   2800  loss 0.0157  lr 9.79e-04  0.890 s/it  mem 1.19 GB  alphas 2.479 2.076 2.416 0.853 1.926
+it   2900  loss 0.0163  lr 9.77e-04  0.892 s/it  mem 1.19 GB  alphas 2.534 2.087 2.475 0.862 1.928
+it   3000  loss 0.0164  lr 9.76e-04  0.889 s/it  mem 1.19 GB  alphas 2.581 2.102 2.526 0.872 1.935
+it   3100  loss 0.0160  lr 9.74e-04  0.891 s/it  mem 1.19 GB  alphas 2.634 2.115 2.582 0.879 1.941
+it   3200  loss 0.0159  lr 9.72e-04  0.892 s/it  mem 1.19 GB  alphas 2.683 2.132 2.629 0.888 1.947
+it   3300  loss 0.0176  lr 9.70e-04  0.891 s/it  mem 1.19 GB  alphas 2.733 2.142 2.683 0.905 1.947
+it   3400  loss 0.0151  lr 9.69e-04  0.889 s/it  mem 1.19 GB  alphas 2.782 2.160 2.739 0.913 1.956
+it   3500  loss 0.0164  lr 9.67e-04  0.890 s/it  mem 1.19 GB  alphas 2.840 2.178 2.799 0.922 1.961
+it   3600  loss 0.0147  lr 9.65e-04  0.893 s/it  mem 1.19 GB  alphas 2.877 2.186 2.838 0.933 1.965
+it   3700  loss 0.0168  lr 9.63e-04  0.888 s/it  mem 1.19 GB  alphas 2.933 2.214 2.901 0.939 1.977
+it   3800  loss 0.0166  lr 9.61e-04  0.889 s/it  mem 1.19 GB  alphas 2.977 2.224 2.949 0.950 1.984
+it   3900  loss 0.0152  lr 9.59e-04  0.889 s/it  mem 1.19 GB  alphas 3.020 2.246 2.996 0.951 2.000
+it   4000  loss 0.0166  lr 9.57e-04  0.888 s/it  mem 1.19 GB  alphas 3.047 2.253 3.039 0.964 2.001
+  val PSNR 32.60 dB  (blurry input 29.83 dB)  * best
+it   4100  loss 0.0151  lr 9.55e-04  1.633 s/it  mem 1.19 GB  alphas 3.090 2.270 3.091 0.971 2.010
+it   4200  loss 0.0164  lr 9.52e-04  0.886 s/it  mem 1.19 GB  alphas 3.131 2.285 3.148 0.975 2.020
+it   4300  loss 0.0158  lr 9.50e-04  0.890 s/it  mem 1.19 GB  alphas 3.170 2.297 3.205 0.982 2.028
+it   4400  loss 0.0152  lr 9.48e-04  0.887 s/it  mem 1.19 GB  alphas 3.188 2.299 3.235 0.986 2.036
+it   4500  loss 0.0160  lr 9.46e-04  0.888 s/it  mem 1.19 GB  alphas 3.227 2.318 3.292 0.994 2.045
+it   4600  loss 0.0150  lr 9.43e-04  0.891 s/it  mem 1.19 GB  alphas 3.260 2.328 3.345 0.999 2.055
+it   4700  loss 0.0157  lr 9.41e-04  0.893 s/it  mem 1.19 GB  alphas 3.281 2.325 3.387 1.005 2.059
+it   4800  loss 0.0153  lr 9.38e-04  0.889 s/it  mem 1.19 GB  alphas 3.328 2.338 3.443 1.010 2.065
+it   4900  loss 0.0158  lr 9.36e-04  0.889 s/it  mem 1.19 GB  alphas 3.370 2.341 3.498 1.012 2.072
+it   5000  loss 0.0166  lr 9.33e-04  0.890 s/it  mem 1.19 GB  alphas 3.398 2.338 3.548 1.015 2.080
+it   5100  loss 0.0162  lr 9.30e-04  0.888 s/it  mem 1.19 GB  alphas 3.422 2.329 3.592 1.018 2.088
+it   5200  loss 0.0144  lr 9.28e-04  0.887 s/it  mem 1.19 GB  alphas 3.446 2.324 3.632 1.019 2.093
+it   5300  loss 0.0150  lr 9.25e-04  0.888 s/it  mem 1.19 GB  alphas 3.469 2.312 3.669 1.022 2.098
+it   5400  loss 0.0165  lr 9.22e-04  0.885 s/it  mem 1.19 GB  alphas 3.509 2.305 3.725 1.024 2.102
+it   5500  loss 0.0152  lr 9.19e-04  0.883 s/it  mem 1.19 GB  alphas 3.530 2.293 3.769 1.025 2.107
+it   5600  loss 0.0152  lr 9.16e-04  0.887 s/it  mem 1.19 GB  alphas 3.555 2.283 3.811 1.028 2.109
+it   5700  loss 0.0156  lr 9.14e-04  0.888 s/it  mem 1.19 GB  alphas 3.572 2.270 3.840 1.026 2.113
+it   5800  loss 0.0155  lr 9.11e-04  0.887 s/it  mem 1.19 GB  alphas 3.595 2.258 3.876 1.029 2.114
+it   5900  loss 0.0151  lr 9.08e-04  0.887 s/it  mem 1.19 GB  alphas 3.616 2.241 3.913 1.033 2.111
+it   6000  loss 0.0154  lr 9.05e-04  0.884 s/it  mem 1.19 GB  alphas 3.645 2.221 3.952 1.036 2.116
+  val PSNR 32.80 dB  (blurry input 29.83 dB)  * best
+it   6100  loss 0.0147  lr 9.01e-04  1.621 s/it  mem 1.19 GB  alphas 3.660 2.207 3.981 1.038 2.117
+it   6200  loss 0.0155  lr 8.98e-04  0.883 s/it  mem 1.19 GB  alphas 3.673 2.195 4.012 1.038 2.119
+it   6300  loss 0.0159  lr 8.95e-04  0.883 s/it  mem 1.19 GB  alphas 3.701 2.182 4.059 1.042 2.118
+it   6400  loss 0.0157  lr 8.92e-04  0.885 s/it  mem 1.19 GB  alphas 3.720 2.170 4.095 1.042 2.118
+it   6500  loss 0.0161  lr 8.89e-04  0.885 s/it  mem 1.19 GB  alphas 3.754 2.158 4.146 1.042 2.122
+it   6600  loss 0.0143  lr 8.85e-04  0.880 s/it  mem 1.19 GB  alphas 3.776 2.146 4.188 1.046 2.122
+it   6700  loss 0.0153  lr 8.82e-04  0.885 s/it  mem 1.19 GB  alphas 3.808 2.136 4.233 1.049 2.121
+it   6800  loss 0.0143  lr 8.79e-04  0.885 s/it  mem 1.19 GB  alphas 3.830 2.126 4.272 1.049 2.124
+it   6900  loss 0.0157  lr 8.75e-04  0.884 s/it  mem 1.19 GB  alphas 3.849 2.112 4.310 1.051 2.125
+it   7000  loss 0.0158  lr 8.72e-04  0.883 s/it  mem 1.19 GB  alphas 3.875 2.098 4.355 1.049 2.126
+it   7100  loss 0.0160  lr 8.68e-04  0.884 s/it  mem 1.19 GB  alphas 3.872 2.077 4.376 1.047 2.125
+it   7200  loss 0.0144  lr 8.65e-04  0.887 s/it  mem 1.19 GB  alphas 3.890 2.072 4.419 1.052 2.120
+it   7300  loss 0.0149  lr 8.61e-04  0.885 s/it  mem 1.19 GB  alphas 3.909 2.054 4.465 1.054 2.123
+it   7400  loss 0.0145  lr 8.57e-04  0.884 s/it  mem 1.19 GB  alphas 3.938 2.043 4.508 1.055 2.124
+it   7500  loss 0.0142  lr 8.54e-04  0.884 s/it  mem 1.19 GB  alphas 3.944 2.030 4.543 1.058 2.122
+it   7600  loss 0.0170  lr 8.50e-04  0.886 s/it  mem 1.19 GB  alphas 3.970 2.022 4.590 1.057 2.123
+it   7700  loss 0.0149  lr 8.46e-04  0.886 s/it  mem 1.19 GB  alphas 3.987 2.013 4.634 1.061 2.119
+it   7800  loss 0.0155  lr 8.42e-04  0.880 s/it  mem 1.19 GB  alphas 4.008 2.002 4.671 1.058 2.116
+it   7900  loss 0.0154  lr 8.38e-04  0.882 s/it  mem 1.19 GB  alphas 4.026 1.996 4.704 1.056 2.114
+it   8000  loss 0.0145  lr 8.35e-04  0.885 s/it  mem 1.19 GB  alphas 4.053 1.988 4.747 1.059 2.113
+  val PSNR 33.04 dB  (blurry input 29.83 dB)  * best
+it   8100  loss 0.0148  lr 8.31e-04  1.621 s/it  mem 1.19 GB  alphas 4.081 1.977 4.798 1.063 2.111
+it   8200  loss 0.0153  lr 8.27e-04  0.882 s/it  mem 1.19 GB  alphas 4.096 1.961 4.836 1.062 2.111
+it   8300  loss 0.0143  lr 8.23e-04  0.881 s/it  mem 1.19 GB  alphas 4.121 1.952 4.877 1.062 2.106
+it   8400  loss 0.0157  lr 8.19e-04  0.887 s/it  mem 1.19 GB  alphas 4.138 1.938 4.913 1.063 2.102
+it   8500  loss 0.0147  lr 8.15e-04  0.884 s/it  mem 1.19 GB  alphas 4.164 1.931 4.952 1.062 2.098
+it   8600  loss 0.0150  lr 8.11e-04  0.883 s/it  mem 1.19 GB  alphas 4.190 1.921 4.996 1.061 2.095
+it   8700  loss 0.0149  lr 8.07e-04  0.881 s/it  mem 1.19 GB  alphas 4.215 1.914 5.034 1.063 2.090
+it   8800  loss 0.0154  lr 8.02e-04  0.892 s/it  mem 1.19 GB  alphas 4.234 1.900 5.075 1.062 2.091
+it   8900  loss 0.0149  lr 7.98e-04  0.887 s/it  mem 1.19 GB  alphas 4.255 1.891 5.118 1.062 2.087
+it   9000  loss 0.0148  lr 7.94e-04  0.886 s/it  mem 1.19 GB  alphas 4.269 1.880 5.148 1.061 2.085
+it   9100  loss 0.0150  lr 7.90e-04  0.886 s/it  mem 1.19 GB  alphas 4.295 1.866 5.184 1.060 2.084
+it   9200  loss 0.0154  lr 7.85e-04  0.896 s/it  mem 1.19 GB  alphas 4.312 1.849 5.218 1.055 2.082
+it   9300  loss 0.0142  lr 7.81e-04  0.887 s/it  mem 1.19 GB  alphas 4.335 1.842 5.250 1.058 2.079
+it   9400  loss 0.0148  lr 7.77e-04  0.887 s/it  mem 1.19 GB  alphas 4.364 1.832 5.290 1.057 2.072
+it   9500  loss 0.0153  lr 7.72e-04  0.885 s/it  mem 1.19 GB  alphas 4.388 1.815 5.322 1.058 2.068
+it   9600  loss 0.0156  lr 7.68e-04  0.888 s/it  mem 1.19 GB  alphas 4.398 1.795 5.354 1.057 2.068
+it   9700  loss 0.0135  lr 7.64e-04  0.882 s/it  mem 1.19 GB  alphas 4.421 1.789 5.390 1.061 2.062
+it   9800  loss 0.0153  lr 7.59e-04  0.883 s/it  mem 1.19 GB  alphas 4.442 1.780 5.416 1.063 2.059
+it   9900  loss 0.0149  lr 7.55e-04  0.879 s/it  mem 1.19 GB  alphas 4.471 1.768 5.454 1.062 2.056
+it  10000  loss 0.0159  lr 7.50e-04  0.881 s/it  mem 1.19 GB  alphas 4.506 1.757 5.495 1.061 2.050
+  val PSNR 33.20 dB  (blurry input 29.83 dB)  * best
+it  10100  loss 0.0138  lr 7.46e-04  1.624 s/it  mem 1.19 GB  alphas 4.520 1.743 5.525 1.059 2.048
+it  10200  loss 0.0147  lr 7.41e-04  0.883 s/it  mem 1.19 GB  alphas 4.556 1.733 5.559 1.058 2.045
+it  10300  loss 0.0151  lr 7.36e-04  0.884 s/it  mem 1.19 GB  alphas 4.593 1.723 5.602 1.059 2.043
+it  10400  loss 0.0143  lr 7.32e-04  0.885 s/it  mem 1.19 GB  alphas 4.616 1.709 5.632 1.057 2.039
+it  10500  loss 0.0145  lr 7.27e-04  0.878 s/it  mem 1.19 GB  alphas 4.649 1.696 5.663 1.059 2.037
+it  10600  loss 0.0144  lr 7.22e-04  0.879 s/it  mem 1.19 GB  alphas 4.679 1.690 5.701 1.059 2.034
+it  10700  loss 0.0153  lr 7.18e-04  0.878 s/it  mem 1.19 GB  alphas 4.705 1.677 5.737 1.056 2.028
+it  10800  loss 0.0135  lr 7.13e-04  0.882 s/it  mem 1.19 GB  alphas 4.737 1.664 5.770 1.057 2.026
+it  10900  loss 0.0148  lr 7.08e-04  0.877 s/it  mem 1.19 GB  alphas 4.768 1.652 5.804 1.054 2.021
+it  11000  loss 0.0147  lr 7.03e-04  0.885 s/it  mem 1.19 GB  alphas 4.797 1.637 5.834 1.052 2.021
+it  11100  loss 0.0143  lr 6.99e-04  0.886 s/it  mem 1.19 GB  alphas 4.827 1.626 5.872 1.052 2.017
+it  11200  loss 0.0143  lr 6.94e-04  0.879 s/it  mem 1.19 GB  alphas 4.859 1.615 5.909 1.055 2.013
+it  11300  loss 0.0145  lr 6.89e-04  0.878 s/it  mem 1.19 GB  alphas 4.893 1.607 5.947 1.055 2.007
+it  11400  loss 0.0147  lr 6.84e-04  0.882 s/it  mem 1.19 GB  alphas 4.927 1.600 5.980 1.055 2.006
+it  11500  loss 0.0143  lr 6.79e-04  0.879 s/it  mem 1.19 GB  alphas 4.961 1.593 6.013 1.055 2.005
+it  11600  loss 0.0143  lr 6.74e-04  0.880 s/it  mem 1.19 GB  alphas 4.995 1.581 6.046 1.055 2.001
+it  11700  loss 0.0142  lr 6.69e-04  0.876 s/it  mem 1.19 GB  alphas 5.030 1.573 6.084 1.056 1.999
+it  11800  loss 0.0151  lr 6.65e-04  0.886 s/it  mem 1.19 GB  alphas 5.068 1.564 6.118 1.055 1.997
+it  11900  loss 0.0144  lr 6.60e-04  0.878 s/it  mem 1.19 GB  alphas 5.093 1.558 6.147 1.055 1.992
+it  12000  loss 0.0142  lr 6.55e-04  0.879 s/it  mem 1.19 GB  alphas 5.125 1.547 6.183 1.054 1.989
+  val PSNR 33.37 dB  (blurry input 29.83 dB)  * best
+it  12100  loss 0.0137  lr 6.50e-04  1.614 s/it  mem 1.19 GB  alphas 5.158 1.540 6.210 1.054 1.986
+it  12200  loss 0.0147  lr 6.45e-04  0.877 s/it  mem 1.19 GB  alphas 5.191 1.527 6.242 1.052 1.983
+it  12300  loss 0.0154  lr 6.40e-04  0.882 s/it  mem 1.19 GB  alphas 5.220 1.520 6.275 1.051 1.981
+it  12400  loss 0.0144  lr 6.35e-04  0.878 s/it  mem 1.19 GB  alphas 5.251 1.512 6.301 1.052 1.980
+it  12500  loss 0.0139  lr 6.29e-04  0.878 s/it  mem 1.19 GB  alphas 5.285 1.505 6.333 1.051 1.978
+it  12600  loss 0.0146  lr 6.24e-04  0.878 s/it  mem 1.19 GB  alphas 5.323 1.495 6.367 1.052 1.978
+it  12700  loss 0.0142  lr 6.19e-04  0.880 s/it  mem 1.19 GB  alphas 5.356 1.490 6.397 1.052 1.975
+it  12800  loss 0.0146  lr 6.14e-04  0.878 s/it  mem 1.19 GB  alphas 5.386 1.486 6.428 1.050 1.969
+it  12900  loss 0.0144  lr 6.09e-04  0.876 s/it  mem 1.19 GB  alphas 5.417 1.477 6.458 1.051 1.968
+it  13000  loss 0.0138  lr 6.04e-04  0.880 s/it  mem 1.19 GB  alphas 5.453 1.473 6.487 1.051 1.964
+it  13100  loss 0.0145  lr 5.99e-04  0.882 s/it  mem 1.19 GB  alphas 5.484 1.463 6.521 1.051 1.961
+it  13200  loss 0.0131  lr 5.94e-04  0.880 s/it  mem 1.19 GB  alphas 5.509 1.453 6.544 1.050 1.959
+it  13300  loss 0.0149  lr 5.89e-04  0.877 s/it  mem 1.19 GB  alphas 5.535 1.444 6.573 1.051 1.959
+it  13400  loss 0.0142  lr 5.83e-04  0.882 s/it  mem 1.19 GB  alphas 5.566 1.440 6.599 1.049 1.955
+it  13500  loss 0.0145  lr 5.78e-04  0.884 s/it  mem 1.19 GB  alphas 5.592 1.438 6.628 1.049 1.952
+it  13600  loss 0.0142  lr 5.73e-04  0.872 s/it  mem 1.19 GB  alphas 5.617 1.432 6.654 1.049 1.952
+it  13700  loss 0.0138  lr 5.68e-04  0.879 s/it  mem 1.19 GB  alphas 5.644 1.423 6.676 1.050 1.952
+it  13800  loss 0.0134  lr 5.63e-04  0.875 s/it  mem 1.19 GB  alphas 5.670 1.422 6.702 1.050 1.950
+it  13900  loss 0.0136  lr 5.58e-04  0.882 s/it  mem 1.19 GB  alphas 5.698 1.420 6.723 1.048 1.947
+it  14000  loss 0.0155  lr 5.52e-04  0.880 s/it  mem 1.19 GB  alphas 5.723 1.419 6.754 1.049 1.945
+  val PSNR 33.49 dB  (blurry input 29.83 dB)  * best
+it  14100  loss 0.0151  lr 5.47e-04  1.612 s/it  mem 1.19 GB  alphas 5.751 1.418 6.783 1.050 1.943
+it  14200  loss 0.0146  lr 5.42e-04  0.879 s/it  mem 1.19 GB  alphas 5.777 1.412 6.805 1.050 1.942
+it  14300  loss 0.0137  lr 5.37e-04  0.878 s/it  mem 1.19 GB  alphas 5.800 1.409 6.827 1.051 1.942
+it  14400  loss 0.0138  lr 5.31e-04  0.876 s/it  mem 1.19 GB  alphas 5.825 1.405 6.854 1.050 1.941
+it  14500  loss 0.0135  lr 5.26e-04  0.879 s/it  mem 1.19 GB  alphas 5.844 1.399 6.881 1.051 1.941
+it  14600  loss 0.0137  lr 5.21e-04  0.880 s/it  mem 1.19 GB  alphas 5.872 1.397 6.907 1.050 1.936
+it  14700  loss 0.0143  lr 5.16e-04  0.873 s/it  mem 1.19 GB  alphas 5.900 1.392 6.933 1.050 1.933
+it  14800  loss 0.0129  lr 5.11e-04  0.874 s/it  mem 1.19 GB  alphas 5.921 1.388 6.955 1.051 1.933
+it  14900  loss 0.0140  lr 5.05e-04  0.873 s/it  mem 1.19 GB  alphas 5.943 1.384 6.978 1.051 1.932
+it  15000  loss 0.0148  lr 5.00e-04  0.876 s/it  mem 1.19 GB  alphas 5.972 1.385 7.003 1.051 1.931
+it  15100  loss 0.0150  lr 4.95e-04  0.879 s/it  mem 1.19 GB  alphas 5.989 1.382 7.026 1.051 1.929
+it  15200  loss 0.0138  lr 4.90e-04  0.882 s/it  mem 1.19 GB  alphas 6.007 1.380 7.051 1.050 1.926
+it  15300  loss 0.0145  lr 4.84e-04  0.877 s/it  mem 1.19 GB  alphas 6.036 1.378 7.076 1.050 1.925
+it  15400  loss 0.0133  lr 4.79e-04  0.870 s/it  mem 1.19 GB  alphas 6.059 1.378 7.096 1.051 1.924
+it  15500  loss 0.0139  lr 4.74e-04  0.874 s/it  mem 1.19 GB  alphas 6.081 1.374 7.121 1.050 1.922
+it  15600  loss 0.0141  lr 4.69e-04  0.877 s/it  mem 1.19 GB  alphas 6.103 1.372 7.142 1.050 1.922
+it  15700  loss 0.0142  lr 4.63e-04  0.876 s/it  mem 1.19 GB  alphas 6.124 1.372 7.164 1.052 1.922
+it  15800  loss 0.0136  lr 4.58e-04  0.876 s/it  mem 1.19 GB  alphas 6.146 1.371 7.185 1.052 1.921
+it  15900  loss 0.0138  lr 4.53e-04  0.878 s/it  mem 1.19 GB  alphas 6.166 1.371 7.207 1.051 1.918
+it  16000  loss 0.0142  lr 4.48e-04  0.877 s/it  mem 1.19 GB  alphas 6.179 1.370 7.224 1.051 1.916
+  val PSNR 33.58 dB  (blurry input 29.83 dB)  * best
+it  16100  loss 0.0145  lr 4.43e-04  1.622 s/it  mem 1.19 GB  alphas 6.199 1.369 7.244 1.053 1.918
+it  16200  loss 0.0134  lr 4.37e-04  0.890 s/it  mem 1.19 GB  alphas 6.213 1.368 7.263 1.053 1.916
+it  16300  loss 0.0148  lr 4.32e-04  0.887 s/it  mem 1.19 GB  alphas 6.232 1.369 7.282 1.054 1.915
+it  16400  loss 0.0141  lr 4.27e-04  0.885 s/it  mem 1.19 GB  alphas 6.245 1.369 7.299 1.054 1.914
+it  16500  loss 0.0137  lr 4.22e-04  0.886 s/it  mem 1.19 GB  alphas 6.264 1.368 7.318 1.054 1.912
+it  16600  loss 0.0143  lr 4.17e-04  0.877 s/it  mem 1.19 GB  alphas 6.279 1.368 7.336 1.053 1.909
+it  16700  loss 0.0130  lr 4.12e-04  0.877 s/it  mem 1.19 GB  alphas 6.296 1.368 7.352 1.054 1.908
+it  16800  loss 0.0142  lr 4.06e-04  0.880 s/it  mem 1.19 GB  alphas 6.306 1.364 7.367 1.055 1.907
+it  16900  loss 0.0136  lr 4.01e-04  0.874 s/it  mem 1.19 GB  alphas 6.322 1.361 7.383 1.054 1.906
+it  17000  loss 0.0137  lr 3.96e-04  0.876 s/it  mem 1.19 GB  alphas 6.330 1.361 7.394 1.054 1.905
+it  17100  loss 0.0143  lr 3.91e-04  0.882 s/it  mem 1.19 GB  alphas 6.344 1.364 7.411 1.054 1.903
+it  17200  loss 0.0139  lr 3.86e-04  0.878 s/it  mem 1.19 GB  alphas 6.359 1.361 7.431 1.055 1.903
+it  17300  loss 0.0128  lr 3.81e-04  0.878 s/it  mem 1.19 GB  alphas 6.370 1.362 7.445 1.055 1.901
+it  17400  loss 0.0133  lr 3.76e-04  0.878 s/it  mem 1.19 GB  alphas 6.386 1.361 7.459 1.055 1.900
+it  17500  loss 0.0147  lr 3.71e-04  0.880 s/it  mem 1.19 GB  alphas 6.392 1.362 7.469 1.055 1.899
+it  17600  loss 0.0137  lr 3.66e-04  0.880 s/it  mem 1.19 GB  alphas 6.401 1.362 7.482 1.056 1.900
+it  17700  loss 0.0137  lr 3.61e-04  0.875 s/it  mem 1.19 GB  alphas 6.413 1.362 7.498 1.055 1.898
+it  17800  loss 0.0139  lr 3.56e-04  0.877 s/it  mem 1.19 GB  alphas 6.426 1.362 7.514 1.055 1.897
+it  17900  loss 0.0134  lr 3.51e-04  0.876 s/it  mem 1.19 GB  alphas 6.435 1.363 7.528 1.055 1.897
+it  18000  loss 0.0136  lr 3.46e-04  0.878 s/it  mem 1.19 GB  alphas 6.445 1.363 7.541 1.055 1.896
+  val PSNR 33.69 dB  (blurry input 29.83 dB)  * best
+it  18100  loss 0.0137  lr 3.41e-04  1.617 s/it  mem 1.19 GB  alphas 6.456 1.362 7.553 1.055 1.895
+it  18200  loss 0.0143  lr 3.36e-04  0.871 s/it  mem 1.19 GB  alphas 6.468 1.359 7.570 1.056 1.894
+it  18300  loss 0.0136  lr 3.31e-04  0.877 s/it  mem 1.19 GB  alphas 6.477 1.358 7.582 1.055 1.893
+it  18400  loss 0.0144  lr 3.26e-04  0.872 s/it  mem 1.19 GB  alphas 6.485 1.355 7.595 1.055 1.892
+it  18500  loss 0.0131  lr 3.21e-04  0.878 s/it  mem 1.19 GB  alphas 6.492 1.355 7.606 1.056 1.891
+it  18600  loss 0.0132  lr 3.16e-04  0.880 s/it  mem 1.19 GB  alphas 6.500 1.356 7.620 1.056 1.891
+it  18700  loss 0.0139  lr 3.11e-04  0.877 s/it  mem 1.19 GB  alphas 6.511 1.357 7.631 1.055 1.890
+it  18800  loss 0.0143  lr 3.06e-04  0.878 s/it  mem 1.19 GB  alphas 6.517 1.355 7.642 1.055 1.889
+it  18900  loss 0.0135  lr 3.02e-04  0.879 s/it  mem 1.19 GB  alphas 6.525 1.353 7.651 1.056 1.889
+it  19000  loss 0.0136  lr 2.97e-04  0.877 s/it  mem 1.19 GB  alphas 6.532 1.354 7.660 1.055 1.887
+it  19100  loss 0.0143  lr 2.92e-04  0.873 s/it  mem 1.19 GB  alphas 6.540 1.355 7.671 1.056 1.887
+it  19200  loss 0.0130  lr 2.87e-04  0.879 s/it  mem 1.19 GB  alphas 6.550 1.354 7.683 1.056 1.885
+it  19300  loss 0.0145  lr 2.83e-04  0.877 s/it  mem 1.19 GB  alphas 6.556 1.354 7.692 1.057 1.885
+it  19400  loss 0.0135  lr 2.78e-04  0.883 s/it  mem 1.19 GB  alphas 6.563 1.351 7.704 1.057 1.884
+it  19500  loss 0.0134  lr 2.73e-04  0.877 s/it  mem 1.19 GB  alphas 6.570 1.352 7.714 1.057 1.884
+it  19600  loss 0.0136  lr 2.68e-04  0.874 s/it  mem 1.19 GB  alphas 6.579 1.352 7.724 1.057 1.883
+it  19700  loss 0.0136  lr 2.64e-04  0.882 s/it  mem 1.19 GB  alphas 6.588 1.352 7.737 1.058 1.884
+it  19800  loss 0.0136  lr 2.59e-04  0.872 s/it  mem 1.19 GB  alphas 6.595 1.351 7.744 1.057 1.883
+it  19900  loss 0.0133  lr 2.55e-04  0.875 s/it  mem 1.19 GB  alphas 6.606 1.350 7.755 1.058 1.883
+it  20000  loss 0.0140  lr 2.50e-04  0.882 s/it  mem 1.19 GB  alphas 6.613 1.349 7.762 1.056 1.881
+  val PSNR 33.69 dB  (blurry input 29.83 dB)
+it  20100  loss 0.0135  lr 2.46e-04  1.602 s/it  mem 1.19 GB  alphas 6.619 1.350 7.772 1.057 1.882
+it  20200  loss 0.0136  lr 2.41e-04  0.874 s/it  mem 1.19 GB  alphas 6.625 1.350 7.780 1.057 1.880
+it  20300  loss 0.0128  lr 2.37e-04  0.877 s/it  mem 1.19 GB  alphas 6.631 1.350 7.788 1.057 1.880
+it  20400  loss 0.0128  lr 2.32e-04  0.877 s/it  mem 1.19 GB  alphas 6.635 1.350 7.797 1.057 1.879
+it  20500  loss 0.0137  lr 2.28e-04  0.878 s/it  mem 1.19 GB  alphas 6.644 1.349 7.806 1.058 1.879
+it  20600  loss 0.0140  lr 2.23e-04  0.877 s/it  mem 1.19 GB  alphas 6.647 1.351 7.812 1.058 1.879
+it  20700  loss 0.0144  lr 2.19e-04  0.871 s/it  mem 1.19 GB  alphas 6.654 1.352 7.820 1.058 1.878
+it  20800  loss 0.0132  lr 2.15e-04  0.872 s/it  mem 1.19 GB  alphas 6.659 1.351 7.828 1.059 1.878
+it  20900  loss 0.0121  lr 2.10e-04  0.875 s/it  mem 1.19 GB  alphas 6.663 1.351 7.835 1.058 1.878
+it  21000  loss 0.0144  lr 2.06e-04  0.877 s/it  mem 1.19 GB  alphas 6.666 1.350 7.842 1.059 1.877
+it  21100  loss 0.0129  lr 2.02e-04  0.878 s/it  mem 1.19 GB  alphas 6.674 1.350 7.851 1.059 1.877
+it  21200  loss 0.0133  lr 1.98e-04  0.874 s/it  mem 1.19 GB  alphas 6.678 1.350 7.857 1.059 1.877
+it  21300  loss 0.0142  lr 1.94e-04  0.875 s/it  mem 1.19 GB  alphas 6.682 1.351 7.864 1.059 1.876
+it  21400  loss 0.0134  lr 1.90e-04  0.875 s/it  mem 1.19 GB  alphas 6.687 1.350 7.869 1.059 1.875
+it  21500  loss 0.0135  lr 1.85e-04  0.877 s/it  mem 1.19 GB  alphas 6.692 1.350 7.877 1.059 1.875
+it  21600  loss 0.0132  lr 1.81e-04  0.875 s/it  mem 1.19 GB  alphas 6.694 1.350 7.882 1.059 1.875
+it  21700  loss 0.0137  lr 1.77e-04  0.877 s/it  mem 1.19 GB  alphas 6.701 1.351 7.888 1.059 1.875
+it  21800  loss 0.0133  lr 1.73e-04  0.876 s/it  mem 1.19 GB  alphas 6.703 1.351 7.892 1.059 1.874
+it  21900  loss 0.0141  lr 1.69e-04  0.871 s/it  mem 1.19 GB  alphas 6.708 1.352 7.897 1.059 1.873
+it  22000  loss 0.0135  lr 1.66e-04  0.875 s/it  mem 1.19 GB  alphas 6.712 1.352 7.903 1.059 1.873
+  val PSNR 33.79 dB  (blurry input 29.83 dB)  * best
+it  22100  loss 0.0132  lr 1.62e-04  1.606 s/it  mem 1.19 GB  alphas 6.713 1.352 7.908 1.059 1.873
+it  22200  loss 0.0135  lr 1.58e-04  0.870 s/it  mem 1.19 GB  alphas 6.716 1.351 7.913 1.058 1.872
+it  22300  loss 0.0137  lr 1.54e-04  0.879 s/it  mem 1.19 GB  alphas 6.719 1.350 7.918 1.058 1.872
+it  22400  loss 0.0128  lr 1.50e-04  0.877 s/it  mem 1.19 GB  alphas 6.721 1.349 7.925 1.059 1.872
+it  22500  loss 0.0137  lr 1.47e-04  0.873 s/it  mem 1.19 GB  alphas 6.725 1.349 7.930 1.060 1.873
+it  22600  loss 0.0133  lr 1.43e-04  0.879 s/it  mem 1.19 GB  alphas 6.729 1.349 7.936 1.060 1.873
+it  22700  loss 0.0133  lr 1.39e-04  0.874 s/it  mem 1.19 GB  alphas 6.733 1.349 7.939 1.059 1.871
+it  22800  loss 0.0132  lr 1.36e-04  0.873 s/it  mem 1.19 GB  alphas 6.735 1.349 7.943 1.059 1.871
+it  22900  loss 0.0142  lr 1.32e-04  0.876 s/it  mem 1.19 GB  alphas 6.738 1.349 7.947 1.059 1.871
+it  23000  loss 0.0131  lr 1.29e-04  0.877 s/it  mem 1.19 GB  alphas 6.738 1.349 7.951 1.060 1.871
+it  23100  loss 0.0132  lr 1.25e-04  0.871 s/it  mem 1.19 GB  alphas 6.740 1.349 7.955 1.059 1.870
+it  23200  loss 0.0137  lr 1.22e-04  0.877 s/it  mem 1.19 GB  alphas 6.742 1.349 7.958 1.059 1.870
+it  23300  loss 0.0122  lr 1.18e-04  0.872 s/it  mem 1.19 GB  alphas 6.742 1.348 7.961 1.059 1.870
+it  23400  loss 0.0145  lr 1.15e-04  0.877 s/it  mem 1.19 GB  alphas 6.745 1.349 7.966 1.059 1.869
+it  23500  loss 0.0129  lr 1.12e-04  0.875 s/it  mem 1.19 GB  alphas 6.749 1.349 7.970 1.059 1.869
+it  23600  loss 0.0131  lr 1.08e-04  0.873 s/it  mem 1.19 GB  alphas 6.751 1.349 7.974 1.060 1.870
+it  23700  loss 0.0133  lr 1.05e-04  0.876 s/it  mem 1.19 GB  alphas 6.753 1.349 7.977 1.059 1.870
+it  23800  loss 0.0134  lr 1.02e-04  0.874 s/it  mem 1.19 GB  alphas 6.755 1.349 7.981 1.059 1.869
+it  23900  loss 0.0126  lr 9.87e-05  0.877 s/it  mem 1.19 GB  alphas 6.756 1.349 7.984 1.059 1.868
+it  24000  loss 0.0140  lr 9.56e-05  0.878 s/it  mem 1.19 GB  alphas 6.758 1.349 7.988 1.060 1.869
+  val PSNR 33.84 dB  (blurry input 29.83 dB)  * best
+it  24100  loss 0.0134  lr 9.26e-05  1.609 s/it  mem 1.19 GB  alphas 6.760 1.349 7.991 1.059 1.868
+it  24200  loss 0.0137  lr 8.95e-05  0.877 s/it  mem 1.19 GB  alphas 6.761 1.349 7.993 1.059 1.868
+it  24300  loss 0.0132  lr 8.66e-05  0.870 s/it  mem 1.19 GB  alphas 6.763 1.349 7.996 1.060 1.869
+it  24400  loss 0.0137  lr 8.37e-05  0.870 s/it  mem 1.19 GB  alphas 6.765 1.348 8.000 1.060 1.869
+it  24500  loss 0.0129  lr 8.08e-05  0.877 s/it  mem 1.19 GB  alphas 6.767 1.349 8.002 1.059 1.868
+it  24600  loss 0.0134  lr 7.80e-05  0.869 s/it  mem 1.19 GB  alphas 6.769 1.349 8.004 1.059 1.868
+it  24700  loss 0.0134  lr 7.52e-05  0.875 s/it  mem 1.19 GB  alphas 6.771 1.348 8.007 1.059 1.868
+it  24800  loss 0.0135  lr 7.24e-05  0.873 s/it  mem 1.19 GB  alphas 6.772 1.349 8.009 1.059 1.867
+it  24900  loss 0.0121  lr 6.97e-05  0.875 s/it  mem 1.19 GB  alphas 6.773 1.348 8.011 1.059 1.868
+it  25000  loss 0.0135  lr 6.71e-05  0.874 s/it  mem 1.19 GB  alphas 6.775 1.349 8.013 1.059 1.868
+it  25100  loss 0.0135  lr 6.45e-05  0.870 s/it  mem 1.19 GB  alphas 6.776 1.349 8.016 1.059 1.868
+it  25200  loss 0.0137  lr 6.20e-05  0.874 s/it  mem 1.19 GB  alphas 6.777 1.349 8.018 1.060 1.868
+it  25300  loss 0.0129  lr 5.95e-05  0.872 s/it  mem 1.19 GB  alphas 6.778 1.349 8.020 1.060 1.868
+it  25400  loss 0.0142  lr 5.70e-05  0.874 s/it  mem 1.19 GB  alphas 6.780 1.350 8.022 1.059 1.867
+it  25500  loss 0.0138  lr 5.46e-05  0.878 s/it  mem 1.19 GB  alphas 6.781 1.349 8.024 1.060 1.868
+it  25600  loss 0.0130  lr 5.23e-05  0.877 s/it  mem 1.19 GB  alphas 6.782 1.349 8.026 1.060 1.868
+it  25700  loss 0.0129  lr 5.00e-05  0.872 s/it  mem 1.19 GB  alphas 6.783 1.350 8.028 1.060 1.867
+it  25800  loss 0.0130  lr 4.77e-05  0.879 s/it  mem 1.19 GB  alphas 6.784 1.349 8.029 1.060 1.867
+it  25900  loss 0.0135  lr 4.55e-05  0.869 s/it  mem 1.19 GB  alphas 6.784 1.349 8.030 1.060 1.867
+it  26000  loss 0.0138  lr 4.33e-05  0.876 s/it  mem 1.19 GB  alphas 6.785 1.349 8.031 1.059 1.867
+  val PSNR 33.83 dB  (blurry input 29.83 dB)
+it  26100  loss 0.0127  lr 4.12e-05  1.627 s/it  mem 1.19 GB  alphas 6.785 1.349 8.033 1.060 1.867
+it  26200  loss 0.0132  lr 3.92e-05  0.890 s/it  mem 1.19 GB  alphas 6.786 1.348 8.034 1.060 1.867
+it  26300  loss 0.0127  lr 3.72e-05  0.886 s/it  mem 1.19 GB  alphas 6.786 1.348 8.035 1.060 1.867
+it  26400  loss 0.0138  lr 3.52e-05  0.881 s/it  mem 1.19 GB  alphas 6.787 1.349 8.035 1.060 1.866
+it  26500  loss 0.0127  lr 3.33e-05  0.881 s/it  mem 1.19 GB  alphas 6.788 1.348 8.036 1.060 1.866
+it  26600  loss 0.0140  lr 3.15e-05  0.877 s/it  mem 1.19 GB  alphas 6.788 1.348 8.038 1.060 1.866
+it  26700  loss 0.0128  lr 2.97e-05  0.875 s/it  mem 1.19 GB  alphas 6.789 1.348 8.039 1.060 1.866
+it  26800  loss 0.0140  lr 2.79e-05  0.871 s/it  mem 1.19 GB  alphas 6.790 1.349 8.040 1.060 1.866
+it  26900  loss 0.0125  lr 2.62e-05  0.875 s/it  mem 1.19 GB  alphas 6.791 1.349 8.041 1.060 1.866
+it  27000  loss 0.0140  lr 2.46e-05  0.875 s/it  mem 1.19 GB  alphas 6.791 1.349 8.042 1.060 1.866
+it  27100  loss 0.0133  lr 2.30e-05  0.868 s/it  mem 1.19 GB  alphas 6.791 1.348 8.042 1.060 1.866
+it  27200  loss 0.0134  lr 2.15e-05  0.876 s/it  mem 1.19 GB  alphas 6.792 1.349 8.043 1.060 1.866
+it  27300  loss 0.0121  lr 2.00e-05  0.871 s/it  mem 1.19 GB  alphas 6.792 1.348 8.044 1.060 1.866
+it  27400  loss 0.0138  lr 1.85e-05  0.876 s/it  mem 1.19 GB  alphas 6.793 1.348 8.044 1.060 1.866
+it  27500  loss 0.0129  lr 1.71e-05  0.875 s/it  mem 1.19 GB  alphas 6.793 1.349 8.045 1.060 1.866
+it  27600  loss 0.0123  lr 1.58e-05  0.868 s/it  mem 1.19 GB  alphas 6.793 1.349 8.045 1.060 1.866
+it  27700  loss 0.0136  lr 1.45e-05  0.872 s/it  mem 1.19 GB  alphas 6.794 1.349 8.046 1.060 1.866
+it  27800  loss 0.0133  lr 1.33e-05  0.873 s/it  mem 1.19 GB  alphas 6.794 1.349 8.046 1.060 1.866
+it  27900  loss 0.0131  lr 1.22e-05  0.873 s/it  mem 1.19 GB  alphas 6.794 1.349 8.047 1.060 1.866
+it  28000  loss 0.0130  lr 1.10e-05  0.871 s/it  mem 1.19 GB  alphas 6.794 1.349 8.047 1.060 1.866
+  val PSNR 33.86 dB  (blurry input 29.83 dB)  * best
+it  28100  loss 0.0125  lr 9.97e-06  1.610 s/it  mem 1.19 GB  alphas 6.795 1.349 8.047 1.060 1.866
+it  28200  loss 0.0137  lr 8.97e-06  0.870 s/it  mem 1.19 GB  alphas 6.795 1.349 8.048 1.060 1.866
+it  28300  loss 0.0130  lr 8.01e-06  0.871 s/it  mem 1.19 GB  alphas 6.795 1.349 8.048 1.060 1.866
+it  28400  loss 0.0123  lr 7.11e-06  0.867 s/it  mem 1.19 GB  alphas 6.795 1.349 8.048 1.060 1.866
+it  28500  loss 0.0134  lr 6.26e-06  0.875 s/it  mem 1.19 GB  alphas 6.795 1.349 8.049 1.060 1.866
+it  28600  loss 0.0137  lr 5.47e-06  0.870 s/it  mem 1.19 GB  alphas 6.795 1.349 8.049 1.060 1.866
+it  28700  loss 0.0131  lr 4.73e-06  0.870 s/it  mem 1.19 GB  alphas 6.796 1.349 8.049 1.060 1.866
+it  28800  loss 0.0124  lr 4.05e-06  0.868 s/it  mem 1.19 GB  alphas 6.796 1.349 8.049 1.060 1.866
+it  28900  loss 0.0141  lr 3.42e-06  0.871 s/it  mem 1.19 GB  alphas 6.796 1.349 8.049 1.060 1.866
+it  29000  loss 0.0127  lr 2.84e-06  0.872 s/it  mem 1.19 GB  alphas 6.796 1.349 8.049 1.060 1.866
+it  29100  loss 0.0129  lr 2.32e-06  0.870 s/it  mem 1.19 GB  alphas 6.796 1.349 8.049 1.060 1.866
+it  29200  loss 0.0133  lr 1.86e-06  0.869 s/it  mem 1.19 GB  alphas 6.796 1.349 8.049 1.060 1.866
+it  29300  loss 0.0133  lr 1.45e-06  0.869 s/it  mem 1.19 GB  alphas 6.796 1.349 8.050 1.060 1.866
+it  29400  loss 0.0130  lr 1.09e-06  0.872 s/it  mem 1.19 GB  alphas 6.796 1.349 8.050 1.060 1.866
+it  29500  loss 0.0129  lr 7.88e-07  0.871 s/it  mem 1.19 GB  alphas 6.796 1.349 8.050 1.060 1.866
+it  29600  loss 0.0130  lr 5.41e-07  0.869 s/it  mem 1.19 GB  alphas 6.796 1.349 8.050 1.060 1.866
+it  29700  loss 0.0138  lr 3.48e-07  0.873 s/it  mem 1.19 GB  alphas 6.796 1.349 8.050 1.060 1.866
+it  29800  loss 0.0129  lr 2.11e-07  0.867 s/it  mem 1.19 GB  alphas 6.796 1.349 8.050 1.060 1.866
+it  29900  loss 0.0135  lr 1.28e-07  0.871 s/it  mem 1.19 GB  alphas 6.796 1.349 8.050 1.060 1.866
+it  30000  loss 0.0125  lr 1.00e-07  0.871 s/it  mem 1.19 GB  alphas 6.796 1.349 8.050 1.060 1.866
+  val PSNR 33.86 dB  (blurry input 29.83 dB)
+done: best val PSNR 33.86 dB -> F:\ImageProcessingCourse\GroupProj\runs\ours\best.pt
+loaded F:\ImageProcessingCourse\GroupProj\runs\ours\best.pt (iteration 28000, val PSNR 33.86 dB)
+  100/1017
+  200/1017
+  300/1017
+  400/1017
+  500/1017
+  600/1017
+  700/1017
+  800/1017
+  900/1017
+  1000/1017
+wrote 1017 predictions to F:\ImageProcessingCourse\GroupProj\preds\ours\test
+model nafnet: 1.992M params, device cuda, amp True
+train 1401 samples, val 273 samples
+it    100  loss 0.0269  lr 1.00e-03  0.179 s/it  mem 1.03 GB
+it    200  loss 0.0219  lr 1.00e-03  0.128 s/it  mem 1.03 GB
+it    300  loss 0.0225  lr 1.00e-03  0.129 s/it  mem 1.03 GB
+it    400  loss 0.0221  lr 1.00e-03  0.132 s/it  mem 1.03 GB
+it    500  loss 0.0209  lr 9.99e-04  0.131 s/it  mem 1.03 GB
+it    600  loss 0.0220  lr 9.99e-04  0.131 s/it  mem 1.03 GB
+it    700  loss 0.0200  lr 9.99e-04  0.131 s/it  mem 1.03 GB
+it    800  loss 0.0207  lr 9.98e-04  0.132 s/it  mem 1.03 GB
+it    900  loss 0.0209  lr 9.98e-04  0.131 s/it  mem 1.03 GB
+it   1000  loss 0.0207  lr 9.97e-04  0.131 s/it  mem 1.03 GB
+it   1100  loss 0.0204  lr 9.97e-04  0.132 s/it  mem 1.03 GB
+it   1200  loss 0.0204  lr 9.96e-04  0.131 s/it  mem 1.03 GB
+it   1300  loss 0.0212  lr 9.95e-04  0.131 s/it  mem 1.03 GB
+it   1400  loss 0.0199  lr 9.95e-04  0.131 s/it  mem 1.03 GB
+it   1500  loss 0.0192  lr 9.94e-04  0.132 s/it  mem 1.03 GB
+it   1600  loss 0.0196  lr 9.93e-04  0.131 s/it  mem 1.03 GB
+it   1700  loss 0.0198  lr 9.92e-04  0.131 s/it  mem 1.03 GB
+it   1800  loss 0.0193  lr 9.91e-04  0.132 s/it  mem 1.03 GB
+it   1900  loss 0.0183  lr 9.90e-04  0.131 s/it  mem 1.03 GB
+it   2000  loss 0.0205  lr 9.89e-04  0.131 s/it  mem 1.03 GB
+  val PSNR 30.57 dB  (blurry input 29.83 dB)  * best
+it   2100  loss 0.0207  lr 9.88e-04  0.327 s/it  mem 1.03 GB
+it   2200  loss 0.0191  lr 9.87e-04  0.132 s/it  mem 1.03 GB
+it   2300  loss 0.0188  lr 9.86e-04  0.131 s/it  mem 1.03 GB
+it   2400  loss 0.0189  lr 9.84e-04  0.131 s/it  mem 1.03 GB
+it   2500  loss 0.0191  lr 9.83e-04  0.132 s/it  mem 1.03 GB
+it   2600  loss 0.0204  lr 9.82e-04  0.131 s/it  mem 1.03 GB
+it   2700  loss 0.0183  lr 9.80e-04  0.131 s/it  mem 1.03 GB
+it   2800  loss 0.0182  lr 9.79e-04  0.131 s/it  mem 1.03 GB
+it   2900  loss 0.0191  lr 9.77e-04  0.132 s/it  mem 1.03 GB
+it   3000  loss 0.0191  lr 9.76e-04  0.131 s/it  mem 1.03 GB
+it   3100  loss 0.0184  lr 9.74e-04  0.131 s/it  mem 1.03 GB
+it   3200  loss 0.0185  lr 9.72e-04  0.132 s/it  mem 1.03 GB
+it   3300  loss 0.0203  lr 9.70e-04  0.131 s/it  mem 1.03 GB
+it   3400  loss 0.0174  lr 9.69e-04  0.131 s/it  mem 1.03 GB
+it   3500  loss 0.0190  lr 9.67e-04  0.131 s/it  mem 1.03 GB
+it   3600  loss 0.0174  lr 9.65e-04  0.132 s/it  mem 1.03 GB
+it   3700  loss 0.0195  lr 9.63e-04  0.131 s/it  mem 1.03 GB
+it   3800  loss 0.0193  lr 9.61e-04  0.131 s/it  mem 1.03 GB
+it   3900  loss 0.0175  lr 9.59e-04  0.132 s/it  mem 1.03 GB
+it   4000  loss 0.0192  lr 9.57e-04  0.131 s/it  mem 1.03 GB
+  val PSNR 31.08 dB  (blurry input 29.83 dB)  * best
+it   4100  loss 0.0177  lr 9.55e-04  0.333 s/it  mem 1.03 GB
+it   4200  loss 0.0190  lr 9.52e-04  0.131 s/it  mem 1.03 GB
+it   4300  loss 0.0184  lr 9.50e-04  0.132 s/it  mem 1.03 GB
+it   4400  loss 0.0177  lr 9.48e-04  0.131 s/it  mem 1.03 GB
+it   4500  loss 0.0187  lr 9.46e-04  0.131 s/it  mem 1.03 GB
+it   4600  loss 0.0175  lr 9.43e-04  0.132 s/it  mem 1.03 GB
+it   4700  loss 0.0183  lr 9.41e-04  0.131 s/it  mem 1.03 GB
+it   4800  loss 0.0177  lr 9.38e-04  0.131 s/it  mem 1.03 GB
+it   4900  loss 0.0183  lr 9.36e-04  0.131 s/it  mem 1.03 GB
+it   5000  loss 0.0194  lr 9.33e-04  0.132 s/it  mem 1.03 GB
+it   5100  loss 0.0188  lr 9.30e-04  0.131 s/it  mem 1.03 GB
+it   5200  loss 0.0166  lr 9.28e-04  0.131 s/it  mem 1.03 GB
+it   5300  loss 0.0174  lr 9.25e-04  0.132 s/it  mem 1.03 GB
+it   5400  loss 0.0189  lr 9.22e-04  0.131 s/it  mem 1.03 GB
+it   5500  loss 0.0177  lr 9.19e-04  0.131 s/it  mem 1.03 GB
+it   5600  loss 0.0177  lr 9.16e-04  0.131 s/it  mem 1.03 GB
+it   5700  loss 0.0181  lr 9.14e-04  0.132 s/it  mem 1.03 GB
+it   5800  loss 0.0179  lr 9.11e-04  0.131 s/it  mem 1.03 GB
+it   5900  loss 0.0175  lr 9.08e-04  0.131 s/it  mem 1.03 GB
+it   6000  loss 0.0181  lr 9.05e-04  0.132 s/it  mem 1.03 GB
+  val PSNR 31.18 dB  (blurry input 29.83 dB)  * best
+it   6100  loss 0.0170  lr 9.01e-04  0.325 s/it  mem 1.03 GB
+it   6200  loss 0.0180  lr 8.98e-04  0.131 s/it  mem 1.03 GB
+it   6300  loss 0.0184  lr 8.95e-04  0.131 s/it  mem 1.03 GB
+it   6400  loss 0.0182  lr 8.92e-04  0.132 s/it  mem 1.03 GB
+it   6500  loss 0.0186  lr 8.89e-04  0.131 s/it  mem 1.03 GB
+it   6600  loss 0.0167  lr 8.85e-04  0.131 s/it  mem 1.03 GB
+it   6700  loss 0.0178  lr 8.82e-04  0.132 s/it  mem 1.03 GB
+it   6800  loss 0.0166  lr 8.79e-04  0.131 s/it  mem 1.03 GB
+it   6900  loss 0.0183  lr 8.75e-04  0.131 s/it  mem 1.03 GB
+it   7000  loss 0.0182  lr 8.72e-04  0.131 s/it  mem 1.03 GB
+it   7100  loss 0.0183  lr 8.68e-04  0.132 s/it  mem 1.03 GB
+it   7200  loss 0.0167  lr 8.65e-04  0.131 s/it  mem 1.03 GB
+it   7300  loss 0.0174  lr 8.61e-04  0.131 s/it  mem 1.03 GB
+it   7400  loss 0.0167  lr 8.57e-04  0.132 s/it  mem 1.03 GB
+it   7500  loss 0.0162  lr 8.54e-04  0.131 s/it  mem 1.03 GB
+it   7600  loss 0.0197  lr 8.50e-04  0.131 s/it  mem 1.03 GB
+it   7700  loss 0.0172  lr 8.46e-04  0.131 s/it  mem 1.03 GB
+it   7800  loss 0.0179  lr 8.42e-04  0.132 s/it  mem 1.03 GB
+it   7900  loss 0.0176  lr 8.38e-04  0.131 s/it  mem 1.03 GB
+it   8000  loss 0.0165  lr 8.35e-04  0.131 s/it  mem 1.03 GB
+  val PSNR 31.45 dB  (blurry input 29.83 dB)  * best
+it   8100  loss 0.0171  lr 8.31e-04  0.332 s/it  mem 1.03 GB
+it   8200  loss 0.0178  lr 8.27e-04  0.131 s/it  mem 1.03 GB
+it   8300  loss 0.0164  lr 8.23e-04  0.131 s/it  mem 1.03 GB
+it   8400  loss 0.0180  lr 8.19e-04  0.131 s/it  mem 1.03 GB
+it   8500  loss 0.0170  lr 8.15e-04  0.132 s/it  mem 1.03 GB
+it   8600  loss 0.0172  lr 8.11e-04  0.131 s/it  mem 1.03 GB
+it   8700  loss 0.0171  lr 8.07e-04  0.131 s/it  mem 1.03 GB
+it   8800  loss 0.0176  lr 8.02e-04  0.132 s/it  mem 1.03 GB
+it   8900  loss 0.0172  lr 7.98e-04  0.131 s/it  mem 1.03 GB
+it   9000  loss 0.0169  lr 7.94e-04  0.131 s/it  mem 1.03 GB
+it   9100  loss 0.0172  lr 7.90e-04  0.131 s/it  mem 1.03 GB
+it   9200  loss 0.0177  lr 7.85e-04  0.132 s/it  mem 1.03 GB
+it   9300  loss 0.0163  lr 7.81e-04  0.131 s/it  mem 1.03 GB
+it   9400  loss 0.0171  lr 7.77e-04  0.131 s/it  mem 1.03 GB
+it   9500  loss 0.0177  lr 7.72e-04  0.132 s/it  mem 1.03 GB
+it   9600  loss 0.0180  lr 7.68e-04  0.131 s/it  mem 1.03 GB
+it   9700  loss 0.0155  lr 7.64e-04  0.131 s/it  mem 1.03 GB
+it   9800  loss 0.0175  lr 7.59e-04  0.131 s/it  mem 1.03 GB
+it   9900  loss 0.0170  lr 7.55e-04  0.132 s/it  mem 1.03 GB
+it  10000  loss 0.0182  lr 7.50e-04  0.131 s/it  mem 1.03 GB
+  val PSNR 31.58 dB  (blurry input 29.83 dB)  * best
+it  10100  loss 0.0159  lr 7.46e-04  0.326 s/it  mem 1.03 GB
+it  10200  loss 0.0168  lr 7.41e-04  0.132 s/it  mem 1.03 GB
+it  10300  loss 0.0172  lr 7.36e-04  0.131 s/it  mem 1.03 GB
+it  10400  loss 0.0165  lr 7.32e-04  0.131 s/it  mem 1.03 GB
+it  10500  loss 0.0166  lr 7.27e-04  0.131 s/it  mem 1.03 GB
+it  10600  loss 0.0164  lr 7.22e-04  0.132 s/it  mem 1.03 GB
+it  10700  loss 0.0175  lr 7.18e-04  0.131 s/it  mem 1.03 GB
+it  10800  loss 0.0154  lr 7.13e-04  0.131 s/it  mem 1.03 GB
+it  10900  loss 0.0169  lr 7.08e-04  0.132 s/it  mem 1.03 GB
+it  11000  loss 0.0167  lr 7.03e-04  0.131 s/it  mem 1.03 GB
+it  11100  loss 0.0164  lr 6.99e-04  0.131 s/it  mem 1.03 GB
+it  11200  loss 0.0165  lr 6.94e-04  0.131 s/it  mem 1.03 GB
+it  11300  loss 0.0166  lr 6.89e-04  0.132 s/it  mem 1.03 GB
+it  11400  loss 0.0166  lr 6.84e-04  0.131 s/it  mem 1.03 GB
+it  11500  loss 0.0163  lr 6.79e-04  0.131 s/it  mem 1.03 GB
+it  11600  loss 0.0164  lr 6.74e-04  0.132 s/it  mem 1.03 GB
+it  11700  loss 0.0161  lr 6.69e-04  0.131 s/it  mem 1.03 GB
+it  11800  loss 0.0172  lr 6.65e-04  0.131 s/it  mem 1.03 GB
+it  11900  loss 0.0165  lr 6.60e-04  0.131 s/it  mem 1.03 GB
+it  12000  loss 0.0162  lr 6.55e-04  0.132 s/it  mem 1.03 GB
+  val PSNR 31.80 dB  (blurry input 29.83 dB)  * best
+it  12100  loss 0.0156  lr 6.50e-04  0.327 s/it  mem 1.03 GB
+it  12200  loss 0.0169  lr 6.45e-04  0.131 s/it  mem 1.03 GB
+it  12300  loss 0.0177  lr 6.40e-04  0.132 s/it  mem 1.03 GB
+it  12400  loss 0.0164  lr 6.35e-04  0.131 s/it  mem 1.03 GB
+it  12500  loss 0.0159  lr 6.29e-04  0.131 s/it  mem 1.03 GB
+it  12600  loss 0.0166  lr 6.24e-04  0.131 s/it  mem 1.03 GB
+it  12700  loss 0.0162  lr 6.19e-04  0.132 s/it  mem 1.03 GB
+it  12800  loss 0.0166  lr 6.14e-04  0.131 s/it  mem 1.03 GB
+it  12900  loss 0.0164  lr 6.09e-04  0.131 s/it  mem 1.03 GB
+it  13000  loss 0.0158  lr 6.04e-04  0.132 s/it  mem 1.03 GB
+it  13100  loss 0.0165  lr 5.99e-04  0.131 s/it  mem 1.03 GB
+it  13200  loss 0.0150  lr 5.94e-04  0.131 s/it  mem 1.03 GB
+it  13300  loss 0.0169  lr 5.89e-04  0.131 s/it  mem 1.03 GB
+it  13400  loss 0.0161  lr 5.83e-04  0.132 s/it  mem 1.03 GB
+it  13500  loss 0.0166  lr 5.78e-04  0.131 s/it  mem 1.03 GB
+it  13600  loss 0.0160  lr 5.73e-04  0.131 s/it  mem 1.03 GB
+it  13700  loss 0.0157  lr 5.68e-04  0.132 s/it  mem 1.03 GB
+it  13800  loss 0.0153  lr 5.63e-04  0.131 s/it  mem 1.03 GB
+it  13900  loss 0.0154  lr 5.58e-04  0.131 s/it  mem 1.03 GB
+it  14000  loss 0.0177  lr 5.52e-04  0.131 s/it  mem 1.03 GB
+  val PSNR 31.80 dB  (blurry input 29.83 dB)
+it  14100  loss 0.0173  lr 5.47e-04  0.325 s/it  mem 1.03 GB
+it  14200  loss 0.0165  lr 5.42e-04  0.131 s/it  mem 1.03 GB
+it  14300  loss 0.0155  lr 5.37e-04  0.131 s/it  mem 1.03 GB
+it  14400  loss 0.0158  lr 5.31e-04  0.132 s/it  mem 1.03 GB
+it  14500  loss 0.0154  lr 5.26e-04  0.131 s/it  mem 1.03 GB
+it  14600  loss 0.0156  lr 5.21e-04  0.131 s/it  mem 1.03 GB
+it  14700  loss 0.0162  lr 5.16e-04  0.131 s/it  mem 1.03 GB
+it  14800  loss 0.0146  lr 5.11e-04  0.132 s/it  mem 1.03 GB
+it  14900  loss 0.0160  lr 5.05e-04  0.131 s/it  mem 1.03 GB
+it  15000  loss 0.0169  lr 5.00e-04  0.131 s/it  mem 1.03 GB
+it  15100  loss 0.0169  lr 4.95e-04  0.132 s/it  mem 1.03 GB
+it  15200  loss 0.0158  lr 4.90e-04  0.131 s/it  mem 1.03 GB
+it  15300  loss 0.0164  lr 4.84e-04  0.131 s/it  mem 1.03 GB
+it  15400  loss 0.0151  lr 4.79e-04  0.131 s/it  mem 1.03 GB
+it  15500  loss 0.0158  lr 4.74e-04  0.132 s/it  mem 1.03 GB
+it  15600  loss 0.0160  lr 4.69e-04  0.131 s/it  mem 1.03 GB
+it  15700  loss 0.0161  lr 4.63e-04  0.131 s/it  mem 1.03 GB
+it  15800  loss 0.0153  lr 4.58e-04  0.132 s/it  mem 1.03 GB
+it  15900  loss 0.0159  lr 4.53e-04  0.131 s/it  mem 1.03 GB
+it  16000  loss 0.0161  lr 4.48e-04  0.131 s/it  mem 1.03 GB
+  val PSNR 31.91 dB  (blurry input 29.83 dB)  * best
+it  16100  loss 0.0165  lr 4.43e-04  0.328 s/it  mem 1.03 GB
+it  16200  loss 0.0152  lr 4.37e-04  0.132 s/it  mem 1.03 GB
+it  16300  loss 0.0168  lr 4.32e-04  0.131 s/it  mem 1.03 GB
+it  16400  loss 0.0160  lr 4.27e-04  0.131 s/it  mem 1.03 GB
+it  16500  loss 0.0156  lr 4.22e-04  0.132 s/it  mem 1.03 GB
+it  16600  loss 0.0160  lr 4.17e-04  0.131 s/it  mem 1.03 GB
+it  16700  loss 0.0148  lr 4.12e-04  0.131 s/it  mem 1.03 GB
+it  16800  loss 0.0161  lr 4.06e-04  0.131 s/it  mem 1.03 GB
+it  16900  loss 0.0153  lr 4.01e-04  0.132 s/it  mem 1.03 GB
+it  17000  loss 0.0157  lr 3.96e-04  0.131 s/it  mem 1.03 GB
+it  17100  loss 0.0162  lr 3.91e-04  0.131 s/it  mem 1.03 GB
+it  17200  loss 0.0159  lr 3.86e-04  0.132 s/it  mem 1.03 GB
+it  17300  loss 0.0146  lr 3.81e-04  0.131 s/it  mem 1.03 GB
+it  17400  loss 0.0150  lr 3.76e-04  0.131 s/it  mem 1.03 GB
+it  17500  loss 0.0167  lr 3.71e-04  0.131 s/it  mem 1.03 GB
+it  17600  loss 0.0154  lr 3.66e-04  0.132 s/it  mem 1.03 GB
+it  17700  loss 0.0155  lr 3.61e-04  0.131 s/it  mem 1.03 GB
+it  17800  loss 0.0157  lr 3.56e-04  0.131 s/it  mem 1.03 GB
+it  17900  loss 0.0150  lr 3.51e-04  0.132 s/it  mem 1.03 GB
+it  18000  loss 0.0154  lr 3.46e-04  0.131 s/it  mem 1.03 GB
+  val PSNR 32.01 dB  (blurry input 29.83 dB)  * best
+it  18100  loss 0.0155  lr 3.41e-04  0.325 s/it  mem 1.03 GB
+it  18200  loss 0.0161  lr 3.36e-04  0.131 s/it  mem 1.03 GB
+it  18300  loss 0.0154  lr 3.31e-04  0.132 s/it  mem 1.03 GB
+it  18400  loss 0.0162  lr 3.26e-04  0.131 s/it  mem 1.03 GB
+it  18500  loss 0.0148  lr 3.21e-04  0.131 s/it  mem 1.03 GB
+it  18600  loss 0.0151  lr 3.16e-04  0.132 s/it  mem 1.03 GB
+it  18700  loss 0.0157  lr 3.11e-04  0.131 s/it  mem 1.03 GB
+it  18800  loss 0.0163  lr 3.06e-04  0.131 s/it  mem 1.03 GB
+it  18900  loss 0.0152  lr 3.02e-04  0.131 s/it  mem 1.03 GB
+it  19000  loss 0.0153  lr 2.97e-04  0.132 s/it  mem 1.03 GB
+it  19100  loss 0.0162  lr 2.92e-04  0.131 s/it  mem 1.03 GB
+it  19200  loss 0.0147  lr 2.87e-04  0.131 s/it  mem 1.03 GB
+it  19300  loss 0.0163  lr 2.83e-04  0.132 s/it  mem 1.03 GB
+it  19400  loss 0.0152  lr 2.78e-04  0.131 s/it  mem 1.03 GB
+it  19500  loss 0.0151  lr 2.73e-04  0.131 s/it  mem 1.03 GB
+it  19600  loss 0.0154  lr 2.68e-04  0.131 s/it  mem 1.03 GB
+it  19700  loss 0.0154  lr 2.64e-04  0.133 s/it  mem 1.03 GB
+it  19800  loss 0.0152  lr 2.59e-04  0.131 s/it  mem 1.03 GB
+it  19900  loss 0.0150  lr 2.55e-04  0.131 s/it  mem 1.03 GB
+it  20000  loss 0.0157  lr 2.50e-04  0.132 s/it  mem 1.03 GB
+  val PSNR 32.12 dB  (blurry input 29.83 dB)  * best
+it  20100  loss 0.0152  lr 2.46e-04  0.326 s/it  mem 1.03 GB
+it  20200  loss 0.0153  lr 2.41e-04  0.131 s/it  mem 1.03 GB
+it  20300  loss 0.0144  lr 2.37e-04  0.131 s/it  mem 1.03 GB
+it  20400  loss 0.0145  lr 2.32e-04  0.132 s/it  mem 1.03 GB
+it  20500  loss 0.0154  lr 2.28e-04  0.131 s/it  mem 1.03 GB
+it  20600  loss 0.0158  lr 2.23e-04  0.131 s/it  mem 1.03 GB
+it  20700  loss 0.0161  lr 2.19e-04  0.132 s/it  mem 1.03 GB
+it  20800  loss 0.0148  lr 2.15e-04  0.131 s/it  mem 1.03 GB
+it  20900  loss 0.0137  lr 2.10e-04  0.131 s/it  mem 1.03 GB
+it  21000  loss 0.0162  lr 2.06e-04  0.131 s/it  mem 1.03 GB
+it  21100  loss 0.0144  lr 2.02e-04  0.132 s/it  mem 1.03 GB
+it  21200  loss 0.0149  lr 1.98e-04  0.131 s/it  mem 1.03 GB
+it  21300  loss 0.0160  lr 1.94e-04  0.131 s/it  mem 1.03 GB
+it  21400  loss 0.0150  lr 1.90e-04  0.132 s/it  mem 1.03 GB
+it  21500  loss 0.0152  lr 1.85e-04  0.131 s/it  mem 1.03 GB
+it  21600  loss 0.0147  lr 1.81e-04  0.131 s/it  mem 1.03 GB
+it  21700  loss 0.0153  lr 1.77e-04  0.131 s/it  mem 1.03 GB
+it  21800  loss 0.0150  lr 1.73e-04  0.132 s/it  mem 1.03 GB
+it  21900  loss 0.0158  lr 1.69e-04  0.131 s/it  mem 1.03 GB
+it  22000  loss 0.0152  lr 1.66e-04  0.131 s/it  mem 1.03 GB
+  val PSNR 32.21 dB  (blurry input 29.83 dB)  * best
+it  22100  loss 0.0148  lr 1.62e-04  0.327 s/it  mem 1.03 GB
+it  22200  loss 0.0150  lr 1.58e-04  0.131 s/it  mem 1.03 GB
+it  22300  loss 0.0154  lr 1.54e-04  0.131 s/it  mem 1.03 GB
+it  22400  loss 0.0144  lr 1.50e-04  0.131 s/it  mem 1.03 GB
+it  22500  loss 0.0153  lr 1.47e-04  0.132 s/it  mem 1.03 GB
+it  22600  loss 0.0150  lr 1.43e-04  0.131 s/it  mem 1.03 GB
+it  22700  loss 0.0149  lr 1.39e-04  0.131 s/it  mem 1.03 GB
+it  22800  loss 0.0148  lr 1.36e-04  0.132 s/it  mem 1.03 GB
+it  22900  loss 0.0158  lr 1.32e-04  0.131 s/it  mem 1.03 GB
+it  23000  loss 0.0147  lr 1.29e-04  0.131 s/it  mem 1.03 GB
+it  23100  loss 0.0148  lr 1.25e-04  0.131 s/it  mem 1.03 GB
+it  23200  loss 0.0154  lr 1.22e-04  0.132 s/it  mem 1.03 GB
+it  23300  loss 0.0136  lr 1.18e-04  0.131 s/it  mem 1.03 GB
+it  23400  loss 0.0162  lr 1.15e-04  0.131 s/it  mem 1.03 GB
+it  23500  loss 0.0145  lr 1.12e-04  0.132 s/it  mem 1.03 GB
+it  23600  loss 0.0146  lr 1.08e-04  0.131 s/it  mem 1.03 GB
+it  23700  loss 0.0150  lr 1.05e-04  0.131 s/it  mem 1.03 GB
+it  23800  loss 0.0150  lr 1.02e-04  0.131 s/it  mem 1.03 GB
+it  23900  loss 0.0142  lr 9.87e-05  0.132 s/it  mem 1.03 GB
+it  24000  loss 0.0157  lr 9.56e-05  0.131 s/it  mem 1.03 GB
+  val PSNR 32.26 dB  (blurry input 29.83 dB)  * best
+it  24100  loss 0.0148  lr 9.26e-05  0.327 s/it  mem 1.03 GB
+it  24200  loss 0.0154  lr 8.95e-05  0.132 s/it  mem 1.03 GB
+it  24300  loss 0.0148  lr 8.66e-05  0.131 s/it  mem 1.03 GB
+it  24400  loss 0.0152  lr 8.37e-05  0.131 s/it  mem 1.03 GB
+it  24500  loss 0.0145  lr 8.08e-05  0.131 s/it  mem 1.03 GB
+it  24600  loss 0.0150  lr 7.80e-05  0.133 s/it  mem 1.03 GB
+it  24700  loss 0.0149  lr 7.52e-05  0.131 s/it  mem 1.03 GB
+it  24800  loss 0.0151  lr 7.24e-05  0.131 s/it  mem 1.03 GB
+it  24900  loss 0.0136  lr 6.97e-05  0.132 s/it  mem 1.03 GB
+it  25000  loss 0.0152  lr 6.71e-05  0.131 s/it  mem 1.03 GB
+it  25100  loss 0.0151  lr 6.45e-05  0.131 s/it  mem 1.03 GB
+it  25200  loss 0.0154  lr 6.20e-05  0.131 s/it  mem 1.03 GB
+it  25300  loss 0.0144  lr 5.95e-05  0.132 s/it  mem 1.03 GB
+it  25400  loss 0.0159  lr 5.70e-05  0.131 s/it  mem 1.03 GB
+it  25500  loss 0.0154  lr 5.46e-05  0.131 s/it  mem 1.03 GB
+it  25600  loss 0.0146  lr 5.23e-05  0.132 s/it  mem 1.03 GB
+it  25700  loss 0.0144  lr 5.00e-05  0.131 s/it  mem 1.03 GB
+it  25800  loss 0.0146  lr 4.77e-05  0.131 s/it  mem 1.03 GB
+it  25900  loss 0.0150  lr 4.55e-05  0.131 s/it  mem 1.03 GB
+it  26000  loss 0.0155  lr 4.33e-05  0.132 s/it  mem 1.03 GB
+  val PSNR 32.27 dB  (blurry input 29.83 dB)  * best
+it  26100  loss 0.0141  lr 4.12e-05  0.325 s/it  mem 1.03 GB
+it  26200  loss 0.0147  lr 3.92e-05  0.131 s/it  mem 1.03 GB
+it  26300  loss 0.0141  lr 3.72e-05  0.132 s/it  mem 1.03 GB
+it  26400  loss 0.0154  lr 3.52e-05  0.131 s/it  mem 1.03 GB
+it  26500  loss 0.0143  lr 3.33e-05  0.131 s/it  mem 1.03 GB
+it  26600  loss 0.0156  lr 3.15e-05  0.131 s/it  mem 1.03 GB
+it  26700  loss 0.0144  lr 2.97e-05  0.132 s/it  mem 1.03 GB
+it  26800  loss 0.0156  lr 2.79e-05  0.131 s/it  mem 1.03 GB
+it  26900  loss 0.0139  lr 2.62e-05  0.131 s/it  mem 1.03 GB
+it  27000  loss 0.0156  lr 2.46e-05  0.132 s/it  mem 1.03 GB
+it  27100  loss 0.0148  lr 2.30e-05  0.131 s/it  mem 1.03 GB
+it  27200  loss 0.0150  lr 2.15e-05  0.131 s/it  mem 1.03 GB
+it  27300  loss 0.0136  lr 2.00e-05  0.131 s/it  mem 1.03 GB
+it  27400  loss 0.0154  lr 1.85e-05  0.132 s/it  mem 1.03 GB
+it  27500  loss 0.0144  lr 1.71e-05  0.131 s/it  mem 1.03 GB
+it  27600  loss 0.0138  lr 1.58e-05  0.131 s/it  mem 1.03 GB
+it  27700  loss 0.0151  lr 1.45e-05  0.132 s/it  mem 1.03 GB
+it  27800  loss 0.0149  lr 1.33e-05  0.131 s/it  mem 1.03 GB
+it  27900  loss 0.0146  lr 1.22e-05  0.131 s/it  mem 1.03 GB
+it  28000  loss 0.0145  lr 1.10e-05  0.131 s/it  mem 1.03 GB
+  val PSNR 32.29 dB  (blurry input 29.83 dB)  * best
+it  28100  loss 0.0141  lr 9.97e-06  0.328 s/it  mem 1.03 GB
+it  28200  loss 0.0152  lr 8.97e-06  0.131 s/it  mem 1.03 GB
+it  28300  loss 0.0145  lr 8.01e-06  0.131 s/it  mem 1.03 GB
+it  28400  loss 0.0138  lr 7.11e-06  0.132 s/it  mem 1.03 GB
+it  28500  loss 0.0150  lr 6.26e-06  0.131 s/it  mem 1.03 GB
+it  28600  loss 0.0153  lr 5.47e-06  0.131 s/it  mem 1.03 GB
+it  28700  loss 0.0147  lr 4.73e-06  0.131 s/it  mem 1.03 GB
+it  28800  loss 0.0139  lr 4.05e-06  0.132 s/it  mem 1.03 GB
+it  28900  loss 0.0158  lr 3.42e-06  0.131 s/it  mem 1.03 GB
+it  29000  loss 0.0142  lr 2.84e-06  0.131 s/it  mem 1.03 GB
+it  29100  loss 0.0144  lr 2.32e-06  0.132 s/it  mem 1.03 GB
+it  29200  loss 0.0148  lr 1.86e-06  0.131 s/it  mem 1.03 GB
+it  29300  loss 0.0149  lr 1.45e-06  0.131 s/it  mem 1.03 GB
+it  29400  loss 0.0145  lr 1.09e-06  0.131 s/it  mem 1.03 GB
+it  29500  loss 0.0144  lr 7.88e-07  0.132 s/it  mem 1.03 GB
+it  29600  loss 0.0145  lr 5.41e-07  0.131 s/it  mem 1.03 GB
+it  29700  loss 0.0155  lr 3.48e-07  0.131 s/it  mem 1.03 GB
+it  29800  loss 0.0143  lr 2.11e-07  0.132 s/it  mem 1.03 GB
+it  29900  loss 0.0151  lr 1.28e-07  0.131 s/it  mem 1.03 GB
+it  30000  loss 0.0139  lr 1.00e-07  0.131 s/it  mem 1.03 GB
+  val PSNR 32.30 dB  (blurry input 29.83 dB)  * best
+done: best val PSNR 32.30 dB -> F:\ImageProcessingCourse\GroupProj\runs\nafnet\best.pt
+loaded F:\ImageProcessingCourse\GroupProj\runs\nafnet\best.pt (iteration 30000, val PSNR 32.30 dB)
+  100/1017
+  200/1017
+  300/1017
+  400/1017
+  500/1017
+  600/1017
+  700/1017
+  800/1017
+  900/1017
+  1000/1017
+wrote 1017 predictions to F:\ImageProcessingCourse\GroupProj\preds\nafnet\test

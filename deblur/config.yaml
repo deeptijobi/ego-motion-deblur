@@ -1,0 +1,17 @@
+# TartanAir camera (from tartanair_tools/data_type.md)
+camera:
+  fx: 320.0
+  fy: 320.0
+  cx: 320.0
+  cy: 240.0
+  width: 640
+  height: 480
+
+# Data
+data_root: F:/ImageProcessingCourse/GroupProj/data
+depth_clamp_m: 100.0     # sky is stored as ~10000
+pose_frame: NED          # convert to optical frame before use
+color_order: RGB         # cv2 loads BGR; convert on load
+
+# Splits
+test_envs: [japanesealley]
